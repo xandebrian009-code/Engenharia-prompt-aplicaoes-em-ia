@@ -93,3 +93,5 @@ O projeto possui **23 erros ativos**. Os principais padrões são:
 | `Question` | `quiz_custom_quiz`, `question_text_text`, `number_number`, `correct_answer_text`, `explanation_text` |
 | `AnswerOption` | `option_text_text`, `question_custom_question` |
 | `StreakDay` | `user_user`, `date_date` |
+
+https://xandebrian009.bubbleapps.io/version-test/?debug_mode=true
