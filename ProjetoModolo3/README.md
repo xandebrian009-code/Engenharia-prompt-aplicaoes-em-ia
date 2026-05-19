@@ -95,3 +95,4 @@ O projeto possui **23 erros ativos**. Os principais padrões são:
 | `StreakDay` | `user_user`, `date_date` |
 
 https://xandebrian009.bubbleapps.io/version-test/?debug_mode=true
+Alexandre e Mateus
