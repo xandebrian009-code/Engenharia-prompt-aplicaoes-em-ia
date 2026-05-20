@@ -1,0 +1,49 @@
+# SysQuiz — Relatório do Projeto
+
+## 📝 Visão Geral
+O **SysQuiz** é uma plataforma web de estudos voltada para a área de Análise de Sistemas, desenvolvida utilizando a ferramenta no-code **Bubble.io**. O aplicativo foi projetado para que os alunos pratiquem conteúdos acadêmicos por meio de quizzes temáticos, acompanhem seu desempenho em tempo real e mantenham uma sequência de estudos diários (streaks).
+
+---
+
+## 🖥️ Estrutura do Aplicativo (Páginas)
+O sistema é composto por **6 páginas** no total:
+
+* **`índice`**: Tela inicial com boas-vindas, análises rápidas, sugestões de estudo e acesso direto aos temas.
+* **`painel`**: Painel de desempenho detalhado com gráficos, evolução mensal e uma matriz comparativa de tema × nível.
+* **`questionários`**: Catálogo completo de quizzes com filtros de busca, interface de execução e tela de resultado final.
+* **`perfil`**: Área do usuário com conquistas desbloqueadas, sequência de dias estudados e histórico de quizzes realizados.
+* **`404`**: Página de erro personalizada para rotas inválidas.
+* **`redefinir_senha`**: Fluxo de recuperação e redefinição de senha de acesso.
+
+---
+
+## 🚀 Funcionalidades Principais
+
+* **Quiz Interativo:** Seleção personalizada de tema e nível, execução dinâmica questão a questão, confirmação de resposta com feedback imediato e resultado final com gabarito comentado.
+* **Métricas de Desempenho:** Monitoramento de total de quizzes respondidos, média de acertos dos últimos 30 dias, sequência atual de dias ativos e melhor sequência do mês.
+* **Dashboard Analítico:** Gráficos de evolução mensal, taxa de acerto por tema, matriz de desempenho por nível e destaques de pontos a melhorar.
+* **Perfil do Usuário:** Customização de nome e turma, histórico completo de tentativas anteriores, medalhas/conquistas e controle de constância.
+* **Sugestões Inteligentes:** O algoritmo do app identifica automaticamente as áreas com menor rendimento do aluno e sugere quizzes específicos para reforço.
+
+---
+
+## 🗄️ Arquitetura de Dados (Banco de Dados)
+A estrutura de dados foi modelada no Bubble utilizando as seguintes entidades:
+
+* **`User`**: Usuário com nome, turma, sequência atual e registro de atividade mensal.
+* **`Quiz`**: Dados dos quizzes, contendo tema, nível de dificuldade e as questões vinculadas.
+* **`Question`**: Perguntas cadastradas com texto, alternativas e a indicação da resposta correta.
+* **`AnswerOption`**: Alternativas individuais de cada questão.
+* **`QuizAttempt`**: Registro de cada tentativa de quiz com pontuação obtida, acurácia, status e metadados.
+* **`AttemptAnswer`**: Respostas individuais selecionadas pelo usuário em cada tentativa.
+
+---
+
+## 🛠️ Status do Desenvolvimento & Correções
+* **Concluído:** Correção dos principais erros críticos relacionados à execução e fluxo do quiz.
+* **Em andamento (Pendências):** Ajustes menores de fontes de dados (`data sources`) em grupos de análises específicos localizados na página **`índice`**.
+
+---
+
+## 🛠️ Tecnologia Utilizada
+* [Bubble.io](https://bubble.io/) (Desenvolvimento Visual No-Code)
